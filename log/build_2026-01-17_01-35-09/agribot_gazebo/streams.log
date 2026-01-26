@@ -1,0 +1,52 @@
+[0.026s] Invoking command in '/home/semegn/agribot_ws/build/agribot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_gazebo -- -j8 -l8
+[0.904s] Invoked command in '/home/semegn/agribot_ws/build/agribot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_gazebo -- -j8 -l8
+[0.906s] Invoking command in '/home/semegn/agribot_ws/build/agribot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_gazebo
+[0.915s] -- Install configuration: ""
+[0.917s] -- Execute custom install script
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/launch/farm.launch.py
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/eth_farm.sdf
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/ethiopian_farm.sdf
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/ethiopian_farm.world
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/ethiopian_farm_generated.sdf
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/farm_health_report.csv
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/generate_farm.py
+[0.918s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_1.jpg
+[0.919s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_2.jpg
+[0.919s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_3.jpg
+[0.919s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_4.jpg
+[0.920s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_5.jpg
+[0.920s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_6.jpg
+[0.920s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_7.jpg
+[0.920s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_8.jpg
+[0.920s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/diseased_9.jpg
+[0.920s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_1.jpg
+[0.920s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_10.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_11.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_12.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_13.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_14.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_15.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_2.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_3.jpg
+[0.921s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_4.jpg
+[0.922s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_5.jpg
+[0.922s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_6.jpg
+[0.922s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_7.jpg
+[0.922s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_8.jpg
+[0.922s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/textures/healthy_9.jpg
+[0.922s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/ament_index/resource_index/package_run_dependencies/agribot_gazebo
+[0.922s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/ament_index/resource_index/parent_prefix_path/agribot_gazebo
+[0.923s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/environment/ament_prefix_path.sh
+[0.923s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/environment/ament_prefix_path.dsv
+[0.923s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/environment/path.sh
+[0.923s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/environment/path.dsv
+[0.924s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/local_setup.bash
+[0.924s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/local_setup.sh
+[0.924s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/local_setup.zsh
+[0.924s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/local_setup.dsv
+[0.924s] -- Symlinking: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.dsv
+[0.937s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/ament_index/resource_index/packages/agribot_gazebo
+[0.937s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/cmake/agribot_gazeboConfig.cmake
+[0.937s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/cmake/agribot_gazeboConfig-version.cmake
+[0.937s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.xml
+[0.958s] Invoked command in '/home/semegn/agribot_ws/build/agribot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_gazebo

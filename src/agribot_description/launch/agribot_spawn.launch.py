@@ -10,7 +10,7 @@ def generate_launch_description():
     # 1. Paths
     pkg_gazebo = get_package_share_directory('agribot_gazebo')
     pkg_description = get_package_share_directory('agribot_description')
-    world_file = os.path.join(pkg_gazebo, 'worlds', 'ethiopian_farm.sdf')
+    world_file = os.path.join(pkg_gazebo, 'worlds', 'ethiopian_farm.world')
     xacro_file = os.path.join(pkg_description, 'urdf', 'agribot.urdf.xacro')
 
     # 2. Process URDF

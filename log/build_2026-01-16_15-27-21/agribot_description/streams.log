@@ -1,0 +1,24 @@
+[0.026s] Invoking command in '/home/semegn/agribot_ws/build/agribot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_description -- -j8 -l8
+[0.885s] Invoked command in '/home/semegn/agribot_ws/build/agribot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_description -- -j8 -l8
+[0.887s] Invoking command in '/home/semegn/agribot_ws/build/agribot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_description
+[0.894s] -- Install configuration: ""
+[0.898s] -- Execute custom install script
+[0.898s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/urdf/agribot.urdf.xacro
+[0.898s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/launch/agribot_spawn.launch.py
+[0.899s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/launch/master.launch.py
+[0.899s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/ament_index/resource_index/package_run_dependencies/agribot_description
+[0.899s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/ament_index/resource_index/parent_prefix_path/agribot_description
+[0.900s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/environment/ament_prefix_path.sh
+[0.900s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/environment/ament_prefix_path.dsv
+[0.900s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/environment/path.sh
+[0.901s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/environment/path.dsv
+[0.902s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/local_setup.bash
+[0.902s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/local_setup.sh
+[0.902s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/local_setup.zsh
+[0.903s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/local_setup.dsv
+[0.903s] -- Symlinking: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.dsv
+[0.912s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/ament_index/resource_index/packages/agribot_description
+[0.912s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/cmake/agribot_descriptionConfig.cmake
+[0.913s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/cmake/agribot_descriptionConfig-version.cmake
+[0.913s] -- Up-to-date symlink: /home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.xml
+[0.939s] Invoked command in '/home/semegn/agribot_ws/build/agribot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_description

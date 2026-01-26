@@ -1,0 +1,28 @@
+[1.391s] Invoking command in '/home/semegn/agribot_ws/src/agribot_navigation': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_navigation build --build-base /home/semegn/agribot_ws/build/agribot_navigation/build install --record /home/semegn/agribot_ws/build/agribot_navigation/install.log --single-version-externally-managed install_data
+[1.681s] running egg_info
+[1.682s] writing ../../build/agribot_navigation/agribot_navigation.egg-info/PKG-INFO
+[1.682s] writing dependency_links to ../../build/agribot_navigation/agribot_navigation.egg-info/dependency_links.txt
+[1.682s] writing entry points to ../../build/agribot_navigation/agribot_navigation.egg-info/entry_points.txt
+[1.682s] writing requirements to ../../build/agribot_navigation/agribot_navigation.egg-info/requires.txt
+[1.683s] writing top-level names to ../../build/agribot_navigation/agribot_navigation.egg-info/top_level.txt
+[1.684s] reading manifest file '../../build/agribot_navigation/agribot_navigation.egg-info/SOURCES.txt'
+[1.685s] adding license file 'LICENSE'
+[1.685s] writing manifest file '../../build/agribot_navigation/agribot_navigation.egg-info/SOURCES.txt'
+[1.686s] running build
+[1.686s] running build_py
+[1.686s] running install
+[1.687s] running install_lib
+[1.688s] running install_data
+[1.688s] running install_egg_info
+[1.691s] removing '/home/semegn/agribot_ws/install/agribot_navigation/lib/python3.10/site-packages/agribot_navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[1.691s] Copying ../../build/agribot_navigation/agribot_navigation.egg-info to /home/semegn/agribot_ws/install/agribot_navigation/lib/python3.10/site-packages/agribot_navigation-0.0.0-py3.10.egg-info
+[1.692s] running install_scripts
+[1.717s] Installing navigation_node script to /home/semegn/agribot_ws/install/agribot_navigation/lib/agribot_navigation
+[1.718s] Installing navigator_goal script to /home/semegn/agribot_ws/install/agribot_navigation/lib/agribot_navigation
+[1.718s] Installing odom_tf_bridge script to /home/semegn/agribot_ws/install/agribot_navigation/lib/agribot_navigation
+[1.718s] Installing reactive_avoid script to /home/semegn/agribot_ws/install/agribot_navigation/lib/agribot_navigation
+[1.718s] Installing safety_stop script to /home/semegn/agribot_ws/install/agribot_navigation/lib/agribot_navigation
+[1.719s] Installing slam_node script to /home/semegn/agribot_ws/install/agribot_navigation/lib/agribot_navigation
+[1.719s] Installing stop_on_disease script to /home/semegn/agribot_ws/install/agribot_navigation/lib/agribot_navigation
+[1.719s] writing list of installed files to '/home/semegn/agribot_ws/build/agribot_navigation/install.log'
+[1.757s] Invoked command in '/home/semegn/agribot_ws/src/agribot_navigation' returned '0': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_navigation build --build-base /home/semegn/agribot_ws/build/agribot_navigation/build install --record /home/semegn/agribot_ws/build/agribot_navigation/install.log --single-version-externally-managed install_data

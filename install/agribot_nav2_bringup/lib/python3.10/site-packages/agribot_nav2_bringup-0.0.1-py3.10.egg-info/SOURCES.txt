@@ -10,5 +10,7 @@ setup.py
 agribot_nav2_bringup/__init__.py
 agribot_nav2_bringup/farm_patrol.py
 launch/bringup_launch.py
+maps/my_farm_map.pgm
+maps/my_farm_map.yaml
 params/nav2_params.yaml
 resource/agribot_nav2_bringup

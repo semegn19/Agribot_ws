@@ -1,0 +1,116 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="agribot_farm">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.8 1</diffuse>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.2 0.15 0.1 1</ambient><diffuse>0.2 0.15 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="farm_assets">
+      <static>true</static>
+      <link name="link">
+        
+        <visual name="c1_r1_v1"><pose>2 6 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_1.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c1_r1_v2"><pose>2 6 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_1.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c1_r1_col"><pose>2 6 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c1_r2_v1"><pose>2 4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_2.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c1_r2_v2"><pose>2 4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_2.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c1_r2_col"><pose>2 4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c1_r3_v1"><pose>2 2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_3.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c1_r3_v2"><pose>2 2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_3.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c1_r3_col"><pose>2 2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c1_r4_v1"><pose>2 0 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_4.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c1_r4_v2"><pose>2 0 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_4.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c1_r4_col"><pose>2 0 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c1_r5_v1"><pose>2 -2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_5.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c1_r5_v2"><pose>2 -2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_5.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c1_r5_col"><pose>2 -2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c1_r6_v1"><pose>2 -4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_6.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c1_r6_v2"><pose>2 -4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_6.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c1_r6_col"><pose>2 -4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+
+        <visual name="c2_r1_v1"><pose>4 6 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_7.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c2_r1_v2"><pose>4 6 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_7.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c2_r1_col"><pose>4 6 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c2_r2_v1"><pose>4 4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_8.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c2_r2_v2"><pose>4 4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_8.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c2_r2_col"><pose>4 4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c2_r3_v1"><pose>4 2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_9.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c2_r3_v2"><pose>4 2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_9.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c2_r3_col"><pose>4 2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c2_r4_v1"><pose>4 0 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_10.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c2_r4_v2"><pose>4 0 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_10.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c2_r4_col"><pose>4 0 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c2_r5_v1"><pose>4 -2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_11.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c2_r5_v2"><pose>4 -2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_11.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c2_r5_col"><pose>4 -2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c2_r6_v1"><pose>4 -4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_12.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c2_r6_v2"><pose>4 -4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_12.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c2_r6_col"><pose>4 -4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+
+        <visual name="c3_r1_v1"><pose>6 6 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_1.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c3_r1_v2"><pose>6 6 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_1.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c3_r1_col"><pose>6 6 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c3_r2_v1"><pose>6 4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_2.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c3_r2_v2"><pose>6 4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_2.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c3_r2_col"><pose>6 4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c3_r3_v1"><pose>6 2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_3.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c3_r3_v2"><pose>6 2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_3.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c3_r3_col"><pose>6 2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c3_r4_v1"><pose>6 0 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_4.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c3_r4_v2"><pose>6 0 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_4.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c3_r4_col"><pose>6 0 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c3_r5_v1"><pose>6 -2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_5.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c3_r5_v2"><pose>6 -2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_5.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c3_r5_col"><pose>6 -2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c3_r6_v1"><pose>6 -4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_6.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c3_r6_v2"><pose>6 -4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_6.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c3_r6_col"><pose>6 -4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+
+        <visual name="c4_r1_v1"><pose>8 6 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_13.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c4_r1_v2"><pose>8 6 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_13.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c4_r1_col"><pose>8 6 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c4_r2_v1"><pose>8 4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_14.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c4_r2_v2"><pose>8 4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_14.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c4_r2_col"><pose>8 4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c4_r3_v1"><pose>8 2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_15.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c4_r3_v2"><pose>8 2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/healthy_15.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c4_r3_col"><pose>8 2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c4_r4_v1"><pose>8 0 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_7.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c4_r4_v2"><pose>8 0 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_7.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c4_r4_col"><pose>8 0 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c4_r5_v1"><pose>8 -2 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_8.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c4_r5_v2"><pose>8 -2 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_8.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c4_r5_col"><pose>8 -2 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+        <visual name="c4_r6_v1"><pose>8 -4 0.15 1.57 0 0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_9.jpg</albedo_map></metal></pbr></material></visual>
+        <visual name="c4_r6_v2"><pose>8 -4 0.15 1.57 0 -0.78</pose><geometry><box><size>0.8 0.8 0.2</size></box></geometry><material><diffuse>1 1 1 1</diffuse><pbr><metal><albedo_map>textures/diseased_9.jpg</albedo_map></metal></pbr></material></visual>
+        <collision name="c4_r6_col"><pose>8 -4 0.5 0 0 0</pose><geometry><cylinder><radius>0.05</radius><length>1.0</length></cylinder></geometry></collision>
+
+      </link>
+    </model>
+  </world>
+</sdf>

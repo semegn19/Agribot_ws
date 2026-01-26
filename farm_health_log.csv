@@ -1,0 +1,440 @@
+X,Y,Status,Timestamp
+0.8,-0.0,Unhealthy,16.246
+1.05,-0.0,Unhealthy,19.253
+1.05,-0.0,Unhealthy,22.576
+1.05,-0.0,Unhealthy,25.694
+1.05,-0.0,Unhealthy,28.8
+1.05,-0.0,Unhealthy,31.987
+1.05,-0.0,Unhealthy,35.435
+1.05,-0.0,Unhealthy,38.503
+1.05,-0.0,Unhealthy,41.628
+1.05,-0.0,Unhealthy,45.035
+1.05,-0.0,Unhealthy,48.269
+1.05,-0.0,Unhealthy,51.64
+1.05,-0.0,Unhealthy,55.039
+1.05,-0.0,Unhealthy,58.225
+1.05,-0.0,Unhealthy,61.753
+1.05,-0.0,Unhealthy,65.024
+1.05,-0.0,Unhealthy,68.139
+1.05,-0.0,Unhealthy,71.197
+1.05,-0.0,Unhealthy,74.305
+1.05,-0.0,Unhealthy,77.597
+1.05,-0.0,Unhealthy,80.813
+1.05,-0.0,Unhealthy,83.921
+0.34,-1.93,Unhealthy,103.374
+0.49,-2.26,Unhealthy,106.496
+0.49,-2.26,Unhealthy,109.749
+0.49,-2.26,Unhealthy,113.127
+0.49,-2.26,Unhealthy,116.498
+0.49,-2.26,Unhealthy,119.715
+0.49,-2.26,Unhealthy,123.119
+0.49,-2.26,Unhealthy,126.16
+0.49,-2.26,Unhealthy,129.651
+0.49,-2.26,Unhealthy,133.101
+0.49,-2.26,Unhealthy,136.366
+0.49,-2.26,Unhealthy,139.636
+0.49,-2.26,Unhealthy,142.727
+0.49,-2.26,Unhealthy,146.044
+0.49,-2.26,Unhealthy,149.16
+0.49,-2.26,Unhealthy,152.374
+0.49,-2.26,Unhealthy,155.435
+0.49,-2.26,Unhealthy,158.832
+0.49,-2.26,Unhealthy,161.99
+0.49,-2.26,Unhealthy,165.233
+0.49,-2.26,Unhealthy,168.363
+0.49,-2.26,Unhealthy,171.397
+0.49,-2.26,Unhealthy,174.838
+0.23,-0.0,Unhealthy,8.508
+1.88,0.05,Unhealthy,21.125
+1.43,0.8,Unhealthy,27.333
+1.72,0.32,Unhealthy,30.559
+1.72,0.32,Unhealthy,34.041
+1.72,0.32,Unhealthy,37.425
+1.72,0.32,Unhealthy,40.719
+1.72,0.32,Unhealthy,43.939
+1.72,0.32,Unhealthy,47.022
+1.72,0.32,Unhealthy,50.139
+1.72,0.32,Unhealthy,53.246
+1.72,0.32,Unhealthy,56.41
+1.72,0.32,Unhealthy,59.627
+1.72,0.32,Unhealthy,63.129
+1.72,0.32,Unhealthy,66.268
+1.72,0.32,Unhealthy,69.533
+1.72,0.32,Unhealthy,72.936
+1.72,0.32,Unhealthy,76.05
+1.72,0.32,Unhealthy,79.174
+1.72,0.32,Unhealthy,82.567
+1.72,0.32,Unhealthy,85.91
+1.72,0.32,Unhealthy,89.182
+1.72,0.32,Unhealthy,92.292
+1.72,0.32,Unhealthy,95.514
+1.72,0.32,Unhealthy,98.585
+1.72,0.32,Unhealthy,101.965
+1.72,0.32,Unhealthy,105.248
+1.72,0.32,Unhealthy,108.486
+1.72,0.32,Unhealthy,111.849
+1.72,0.32,Unhealthy,115.241
+1.72,0.32,Unhealthy,118.485
+1.72,0.32,Unhealthy,121.58
+1.72,0.32,Unhealthy,124.651
+1.72,0.32,Unhealthy,127.707
+1.72,0.32,Unhealthy,130.76
+1.72,0.32,Unhealthy,133.931
+0.0,-0.0,Unhealthy,18.196
+0.65,-0.0,Unhealthy,21.383
+1.44,-0.77,Unhealthy,28.029
+1.44,-0.77,Unhealthy,31.329
+1.44,-0.77,Unhealthy,34.419
+2.49,-0.97,Unhealthy,37.571
+3.47,-1.64,Unhealthy,40.852
+3.56,-1.69,Unhealthy,44.101
+3.56,-1.69,Unhealthy,47.186
+3.68,-1.73,Unhealthy,50.912
+4.24,-1.27,Unhealthy,54.701
+4.24,-2.23,Unhealthy,62.0
+4.36,-2.08,Unhealthy,69.747
+6.42,-2.66,Unhealthy,77.69
+5.8,-2.06,Unhealthy,85.027
+6.4,-2.99,Unhealthy,90.328
+6.22,-3.15,Unhealthy,93.486
+6.68,-3.36,Unhealthy,98.424
+7.37,-1.07,Unhealthy,425.745
+7.05,0.2,Unhealthy,430.51
+7.05,0.2,Unhealthy,433.535
+7.05,0.62,Unhealthy,437.939
+5.47,0.05,Unhealthy,442.296
+3.06,-0.75,Unhealthy,451.009
+3.06,-0.75,Unhealthy,454.341
+4.66,2.21,Unhealthy,462.99
+8.55,3.2,Unhealthy,471.098
+9.42,3.34,Unhealthy,474.718
+3.47,-2.29,Unhealthy,518.553
+7.78,-4.91,Unhealthy,531.153
+8.86,-5.25,Unhealthy,536.287
+10.11,-3.28,Unhealthy,539.945
+10.79,-1.74,Unhealthy,543.254
+11.37,-0.85,Unhealthy,547.54
+11.41,-0.81,Unhealthy,552.988
+10.46,3.16,Unhealthy,583.5
+17.29,-1.57,Unhealthy,613.243
+12.47,-2.16,Unhealthy,619.189
+11.72,-1.89,Unhealthy,622.605
+0.39,-0.0,Healthy,20.515
+1.17,-0.12,Healthy,25.148
+1.63,-1.04,Healthy,42.334
+1.63,-1.04,Healthy,49.16
+2.38,-1.67,Healthy,52.482
+2.38,-1.67,Healthy,55.675
+0.0,-0.0,Healthy,48.371
+0.71,0.5,Healthy,51.595
+1.29,0.53,Healthy,58.293
+0.86,0.6,Healthy,61.429
+-0.05,0.7,Healthy,64.736
+-0.05,0.7,Healthy,67.871
+-0.05,0.7,Healthy,71.177
+-0.05,0.7,Healthy,74.447
+-0.05,0.7,Healthy,77.655
+-0.05,0.7,Healthy,80.772
+-0.05,0.7,Healthy,83.974
+-0.05,0.7,Healthy,87.239
+-0.05,0.7,Healthy,90.246
+-0.05,0.7,Healthy,93.457
+-0.05,0.7,Healthy,96.534
+-0.05,0.7,Healthy,99.54
+-0.05,0.7,Healthy,102.608
+-0.05,0.7,Healthy,105.649
+-0.05,0.7,Healthy,108.817
+-0.05,0.7,Healthy,112.006
+-0.05,0.7,Healthy,115.275
+0.0,-0.0,Healthy,34.718,corn leaf blight,0.4217606782913208
+0.57,0.47,Healthy,37.836,corn leaf blight,0.564469575881958
+0.75,0.65,Healthy,41.041,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,44.082,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,47.294,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,50.382,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,53.665,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,56.673,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,59.73,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,62.964,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,66.044,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,69.436,corn leaf blight,0.5597198009490967
+0.75,0.65,Healthy,72.61,corn leaf blight,0.5597198009490967
+0.0,0.0,Unhealthy,10.001,corn leaf blight,0.5391176342964172
+0.88,0.58,Unhealthy,15.361,corn leaf blight,0.44882190227508545
+0.0,-0.0,Unhealthy,11.732,potato leaf late blight,0.30323752760887146
+0.48,-0.0,Unhealthy,15.541,potato leaf late blight,0.36943140625953674
+0.41,1.13,Unhealthy,21.445,corn leaf blight,0.5645498633384705
+0.0,-0.0,Unhealthy,27.26,potato leaf late blight,0.3355085551738739
+1.65,-0.0,Unhealthy,30.714,corn leaf blight,0.6613361835479736
+1.75,0.0,Unhealthy,33.835,corn leaf blight,0.6613361835479736
+1.75,0.0,Unhealthy,36.863,corn leaf blight,0.6613361835479736
+1.75,0.0,Unhealthy,40.024,corn leaf blight,0.6613361835479736
+1.75,0.0,Unhealthy,43.294,corn leaf blight,0.6613361835479736
+1.75,0.0,Unhealthy,46.777,corn leaf blight,0.6613361835479736
+1.75,0.0,Unhealthy,50.008,corn leaf blight,0.6613361835479736
+1.75,0.0,Unhealthy,53.162,corn leaf blight,0.6606071591377258
+2.36,0.49,Unhealthy,57.073,potato leaf late blight,0.48391732573509216
+2.34,0.57,Unhealthy,60.149,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,63.202,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,66.39,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,69.761,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,72.978,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,76.241,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,79.293,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,82.32,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,85.729,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,88.928,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,92.237,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,95.243,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,98.49,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,101.64,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,104.961,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,108.324,potato leaf late blight,0.4671091139316559
+2.34,0.57,Unhealthy,111.659,potato leaf late blight,0.4671091139316559
+2.62,0.4,Unhealthy,114.709,corn leaf blight,0.5689263343811035
+2.94,0.37,Unhealthy,117.741,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,121.0,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,124.252,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,127.294,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,130.753,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,133.781,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,136.902,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,140.003,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,143.156,corn leaf blight,0.8095243573188782
+3.31,0.34,Unhealthy,146.391,corn leaf blight,0.8095243573188782
+0.0,-0.0,Unhealthy,17.532,corn leaf blight,0.5556544065475464
+0.89,0.9,Unhealthy,20.676,corn leaf blight,0.7987673282623291
+1.31,1.18,Unhealthy,23.83,corn gray leaf spot,0.6694003343582153
+0.75,3.8,Unhealthy,32.012,corn leaf blight,0.7539889216423035
+0.99,4.0,Unhealthy,35.299,corn leaf blight,0.7650581002235413
+0.99,4.0,Unhealthy,38.374,corn leaf blight,0.7650581002235413
+1.74,3.72,Unhealthy,45.046,grape leaf,0.5282935500144958
+0.63,5.95,Unhealthy,77.663,corn rust leaf,0.31370389461517334
+1.16,6.16,Unhealthy,81.175,corn leaf blight,0.3573751449584961
+1.16,6.16,Unhealthy,84.422,corn leaf blight,0.3573751449584961
+0.0,-0.0,Unhealthy,Potato leaf late blight,0.684,9.704
+0.6,-0.0,Unhealthy,Potato leaf late blight,0.562,13.2
+0.88,-0.78,Unhealthy,Corn rust leaf,0.417,20.391
+1.06,-1.26,Healthy,Raspberry leaf,0.63,23.615
+1.52,-2.7,Healthy,Strawberry leaf,0.848,27.187
+1.01,-2.57,Unhealthy,Corn Gray leaf spot,0.388,30.23
+0.4,-1.78,Healthy,Tomato leaf,0.321,39.55
+0.9,-2.67,Healthy,Tomato leaf,0.602,42.774
+0.73,-2.96,Healthy,Tomato leaf,0.891,45.929
+0.73,-2.96,Healthy,Tomato leaf,0.891,49.037
+0.73,-2.96,Healthy,Tomato leaf,0.891,52.038
+0.73,-2.96,Healthy,Tomato leaf,0.891,55.101
+0.73,-2.96,Healthy,Tomato leaf,0.891,58.385
+0.73,-2.96,Healthy,Tomato leaf,0.891,61.403
+0.73,-2.96,Healthy,Tomato leaf,0.891,64.522
+0.73,-2.96,Healthy,Tomato leaf,0.891,67.665
+0.73,-2.96,Healthy,Tomato leaf,0.891,70.831
+0.73,-2.96,Healthy,Tomato leaf,0.891,73.857
+0.73,-2.96,Healthy,Tomato leaf,0.891,77.255
+0.73,-2.96,Healthy,Tomato leaf,0.891,80.607
+0.73,-2.96,Healthy,Tomato leaf,0.891,83.931
+0.73,-2.96,Healthy,Tomato leaf,0.891,87.463
+0.73,-2.96,Healthy,Tomato leaf,0.891,90.704
+0.73,-2.96,Healthy,Tomato leaf,0.891,93.749
+0.73,-2.96,Healthy,Tomato leaf,0.891,97.091
+0.73,-2.96,Healthy,Tomato leaf,0.891,100.795
+0.73,-2.96,Healthy,Tomato leaf,0.891,103.894
+0.73,-2.96,Healthy,Tomato leaf,0.891,107.215
+0.73,-2.96,Healthy,Tomato leaf,0.891,110.502
+0.73,-2.96,Healthy,Tomato leaf,0.891,113.79
+0.73,-2.96,Healthy,Tomato leaf,0.891,117.029
+0.73,-2.96,Healthy,Tomato leaf,0.891,120.168
+0.73,-2.96,Healthy,Tomato leaf,0.891,123.341
+0.73,-2.96,Healthy,Tomato leaf,0.891,126.497
+0.73,-2.96,Healthy,Tomato leaf,0.891,129.605
+0.73,-2.96,Healthy,Tomato leaf,0.891,132.694
+0.73,-2.96,Healthy,Tomato leaf,0.891,135.86
+0.73,-2.96,Healthy,Tomato leaf,0.891,139.139
+0.73,-2.96,Healthy,Tomato leaf,0.891,142.3
+0.73,-2.96,Healthy,Tomato leaf,0.891,145.55
+0.73,-2.96,Healthy,Tomato leaf,0.891,148.672
+0.73,-2.96,Healthy,Tomato leaf,0.891,151.891
+0.73,-2.96,Healthy,Tomato leaf,0.891,155.07
+0.73,-2.96,Healthy,Tomato leaf,0.891,158.435
+0.73,-2.96,Healthy,Tomato leaf,0.891,161.897
+0.73,-2.96,Healthy,Tomato leaf,0.891,164.987
+0.73,-2.96,Healthy,Tomato leaf,0.891,168.255
+0.73,-2.96,Healthy,Tomato leaf,0.891,171.581
+0.73,-2.96,Healthy,Tomato leaf,0.891,174.614
+0.73,-2.96,Healthy,Tomato leaf,0.891,177.86
+0.73,-2.96,Healthy,Tomato leaf,0.891,181.174
+0.73,-2.96,Healthy,Tomato leaf,0.891,184.245
+0.73,-2.96,Healthy,Tomato leaf,0.891,187.249
+0.73,-2.96,Healthy,Tomato leaf,0.891,190.641
+0.73,-2.96,Healthy,Tomato leaf,0.891,193.69
+0.73,-2.96,Healthy,Tomato leaf,0.891,196.848
+0.73,-2.96,Healthy,Tomato leaf,0.891,200.185
+0.73,-2.96,Healthy,Tomato leaf,0.891,203.532
+0.73,-2.96,Healthy,Tomato leaf,0.891,207.031
+0.73,-2.96,Healthy,Tomato leaf,0.891,210.369
+0.73,-2.96,Healthy,Tomato leaf,0.891,213.445
+0.73,-2.96,Healthy,Tomato leaf,0.891,216.654
+0.73,-2.96,Healthy,Tomato leaf,0.891,219.834
+0.73,-2.96,Healthy,Tomato leaf,0.891,223.115
+0.73,-2.96,Healthy,Tomato leaf,0.891,226.366
+0.73,-2.96,Healthy,Tomato leaf,0.891,229.831
+0.73,-2.96,Healthy,Tomato leaf,0.891,232.892
+0.73,-2.96,Healthy,Tomato leaf,0.891,236.059
+0.73,-2.96,Healthy,Tomato leaf,0.891,239.404
+0.73,-2.96,Healthy,Tomato leaf,0.891,242.756
+0.73,-2.96,Healthy,Tomato leaf,0.891,245.86
+0.73,-2.96,Healthy,Tomato leaf,0.891,249.139
+0.73,-2.96,Healthy,Tomato leaf,0.891,252.273
+0.73,-2.96,Healthy,Tomato leaf,0.891,255.345
+0.73,-2.96,Healthy,Tomato leaf,0.891,258.522
+0.73,-2.96,Healthy,Tomato leaf,0.891,261.804
+0.73,-2.96,Healthy,Tomato leaf,0.891,265.044
+0.73,-2.96,Healthy,Tomato leaf,0.891,268.465
+0.73,-2.96,Healthy,Tomato leaf,0.891,271.845
+0.73,-2.96,Healthy,Tomato leaf,0.891,275.122
+0.73,-2.96,Healthy,Tomato leaf,0.891,278.459
+0.73,-2.96,Healthy,Tomato leaf,0.891,281.571
+0.73,-2.96,Healthy,Tomato leaf,0.891,284.951
+0.73,-2.96,Healthy,Tomato leaf,0.891,287.98
+0.73,-2.96,Healthy,Tomato leaf,0.891,291.308
+0.73,-2.96,Healthy,Tomato leaf,0.891,294.443
+0.73,-2.96,Healthy,Tomato leaf,0.891,297.889
+0.73,-2.96,Healthy,Tomato leaf,0.891,301.157
+0.73,-2.96,Healthy,Tomato leaf,0.891,304.535
+0.73,-2.96,Healthy,Tomato leaf,0.891,307.692
+0.73,-2.96,Healthy,Tomato leaf,0.891,310.731
+0.73,-2.96,Healthy,Tomato leaf,0.891,314.002
+1.02,-2.62,Unhealthy,Corn Gray leaf spot,0.305,318.283
+1.38,-2.21,Unhealthy,Corn leaf blight,0.66,371.235
+1.57,-0.42,Unhealthy,Corn leaf blight,0.567,381.718
+2.52,-0.22,Healthy,Blueberry leaf,0.509,384.761
+3.12,-1.19,Healthy,Blueberry leaf,0.506,388.065
+3.21,-1.16,Healthy,Blueberry leaf,0.506,391.183
+3.21,-1.16,Healthy,Blueberry leaf,0.506,394.35
+3.21,-1.16,Unhealthy,Corn leaf blight,0.543,400.099
+3.75,-1.14,Unhealthy,Corn leaf blight,0.441,403.352
+3.58,-1.04,Unhealthy,Corn leaf blight,0.531,407.05
+3.86,-0.8,Unhealthy,Corn leaf blight,0.363,410.755
+6.55,-0.91,Healthy,Peach leaf,0.428,419.572
+7.26,0.09,Healthy,Bell_pepper leaf,0.636,427.698
+7.64,-0.39,Healthy,Strawberry leaf,0.313,433.791
+0.0,-0.0,Unhealthy,Corn leaf blight,0.636,11.966
+-1.37,-0.0,Unhealthy,Corn leaf blight,0.373,23.677
+6.98,-5.79,Unhealthy,grape leaf black rot,0.36,77.341
+4.16,0.93,Healthy,Tomato leaf,0.354,91.246
+3.89,1.58,Healthy,Apple leaf,0.632,94.391
+-4.27,1.41,Unhealthy,Tomato Septoria leaf spot,0.378,203.049
+1.62,1.24,Healthy,grape leaf,0.408,395.217
+1.93,0.4,Unhealthy,Corn leaf blight,0.415,399.686
+1.93,0.4,Healthy,Raspberry leaf,0.712,403.4
+1.93,0.4,Healthy,Blueberry leaf,0.408,407.014
+3.2,-4.26,Unhealthy,Corn leaf blight,0.611,410.122
+3.36,-4.77,Unhealthy,Corn leaf blight,0.533,413.753
+5.07,-10.59,Healthy,Peach leaf,0.328,425.45
+6.96,-9.11,Healthy,Soyabean leaf,0.524,432.802
+-2.6,-4.44,Unhealthy,Corn leaf blight,0.313,467.024
+-2.59,-4.53,Unhealthy,Corn leaf blight,0.39,471.353
+1.12,-2.85,Unhealthy,Corn leaf blight,0.325,477.607
+2.99,-1.95,Healthy,Soyabean leaf,0.369,481.335
+3.16,-1.87,Unhealthy,Corn leaf blight,0.358,484.703
+6.87,-0.07,Healthy,Peach leaf,0.425,495.255
+6.57,2.22,Unhealthy,Corn leaf blight,0.465,503.524
+6.57,2.22,Unhealthy,Corn Gray leaf spot,0.301,507.533
+6.19,-8.01,Unhealthy,Corn leaf blight,0.551,541.641
+4.68,-7.85,Unhealthy,Corn leaf blight,0.51,545.705
+3.71,-7.57,Unhealthy,Corn leaf blight,0.677,549.328
+-0.16,-6.36,Healthy,Soyabean leaf,0.546,555.518
+-0.16,-6.36,Healthy,Strawberry leaf,0.68,558.932
+-2.34,-6.16,Healthy,Tomato leaf,0.667,561.997
+-6.97,-4.04,Healthy,Peach leaf,0.785,578.434
+-5.42,-2.97,Healthy,Strawberry leaf,0.708,581.724
+-2.67,-0.37,Healthy,Strawberry leaf,0.602,592.489
+-0.63,1.6,Healthy,Apple leaf,0.766,596.257
+0.95,3.14,Healthy,grape leaf,0.867,600.663
+1.77,5.39,Healthy,grape leaf,0.584,611.001
+1.69,4.28,Healthy,Strawberry leaf,0.699,614.236
+1.69,4.28,Healthy,Raspberry leaf,0.783,617.334
+2.28,-0.13,Healthy,Soyabean leaf,0.406,622.668
+3.98,-3.4,Healthy,Raspberry leaf,0.627,631.752
+4.31,-6.71,Healthy,Strawberry leaf,0.818,646.798
+2.37,-8.2,Healthy,Strawberry leaf,0.831,658.651
+-2.58,-11.09,Unhealthy,Corn Gray leaf spot,0.327,664.454
+-2.99,-15.75,Unhealthy,Corn leaf blight,0.356,681.991
+-2.99,-15.75,Unhealthy,Tomato leaf bacterial spot,0.461,685.418
+-1.45,-13.37,Unhealthy,Corn leaf blight,0.781,688.832
+-1.45,-13.37,Unhealthy,Corn Gray leaf spot,0.463,694.937
+-1.45,-13.37,Unhealthy,Potato leaf late blight,0.857,697.941
+2.29,-6.15,Unhealthy,Potato leaf late blight,0.936,706.745
+2.04,-6.58,Healthy,Tomato leaf,0.478,710.854
+3.04,-6.61,Healthy,Strawberry leaf,0.81,714.02
+1.72,-7.64,Unhealthy,Potato leaf late blight,0.957,717.296
+2.68,-5.16,Unhealthy,Apple Scab Leaf,0.315,724.057
+2.73,-5.01,Healthy,Apple leaf,0.893,727.356
+1.96,-2.13,Healthy,Raspberry leaf,0.587,742.62
+1.96,-2.13,Unhealthy,Corn leaf blight,0.423,747.534
+5.47,-1.24,Unhealthy,Corn leaf blight,0.842,750.75
+8.31,-1.07,Healthy,Raspberry leaf,0.815,754.458
+8.57,-1.03,Healthy,Raspberry leaf,0.536,758.356
+12.04,-0.55,Healthy,grape leaf,0.443,761.737
+10.92,-9.7,Healthy,Apple leaf,0.729,817.624
+12.11,-8.58,Unhealthy,Tomato leaf bacterial spot,0.586,824.54
+11.78,-8.73,Healthy,Apple leaf,0.963,827.897
+12.43,-8.54,Unhealthy,Tomato leaf late blight,0.44,831.941
+10.24,-6.37,Unhealthy,Corn leaf blight,0.523,838.526
+10.24,-6.37,Unhealthy,Corn leaf blight,0.4,842.21
+7.17,-3.28,Unhealthy,Corn leaf blight,0.663,847.102
+7.17,-3.28,Unhealthy,Corn leaf blight,0.715,850.238
+1.76,-3.21,Unhealthy,grape leaf black rot,0.501,869.533
+5.09,-3.16,Healthy,Blueberry leaf,0.574,881.46
+9.62,-2.8,Healthy,Peach leaf,0.874,884.801
+0.88,-0.35,Healthy,Raspberry leaf,0.421,121.373
+9.94,-6.31,Unhealthy,Corn leaf blight,0.315,153.496
+6.25,-0.82,Healthy,Peach leaf,0.489,169.84
+4.63,1.89,Healthy,Apple leaf,0.57,173.74
+4.63,1.89,Healthy,Apple leaf,0.642,177.393
+4.33,2.38,Healthy,Apple leaf,0.642,180.433
+4.33,2.38,Healthy,Apple leaf,0.642,183.7
+0.0,-0.0,Unhealthy,Corn leaf blight,0.568,29.81
+0.82,-1.43,Unhealthy,Corn leaf blight,0.525,121.265
+2.31,1.52,Unhealthy,Corn leaf blight,0.472,126.799
+3.54,1.66,Unhealthy,Apple rust leaf,0.789,130.249
+8.89,2.91,Healthy,Blueberry leaf,0.339,153.541
+7.57,2.74,Healthy,Soyabean leaf,0.477,157.051
+6.6,0.22,Healthy,Strawberry leaf,0.594,162.407
+0.0,-0.0,Unhealthy,Corn leaf blight,0.323,27.542
+0.05,0.97,Unhealthy,Corn leaf blight,0.55,30.759
+8.64,9.25,Healthy,Peach leaf,0.356,66.64
+1.31,0.96,Unhealthy,Corn leaf blight,0.561,145.278
+1.58,1.44,Unhealthy,Corn leaf blight,0.363,150.684
+0.0,-0.0,Unhealthy,Corn leaf blight,0.604,38.223
+9.27,-4.5,Unhealthy,Corn Gray leaf spot,0.424,111.659
+1.08,-1.73,Unhealthy,Corn leaf blight,0.338,130.722
+0.57,0.08,Unhealthy,Corn leaf blight,0.553,136.464
+0.59,0.69,Unhealthy,Corn Gray leaf spot,0.518,142.698
+1.8,1.01,Unhealthy,Corn leaf blight,0.522,152.694
+5.49,1.89,Unhealthy,Corn leaf blight,0.64,171.178
+2.72,1.26,Unhealthy,Corn leaf blight,0.66,174.381
+2.72,1.26,Unhealthy,Corn leaf blight,0.66,178.12
+1.76,1.04,Healthy,Blueberry leaf,0.474,186.598
+0.0,-0.0,Unhealthy,Corn leaf blight,0.767,52.083
+3.86,8.5,Healthy,Peach leaf,0.424,81.667
+8.45,9.14,Healthy,Peach leaf,0.858,92.68
+8.0,7.28,Unhealthy,Corn leaf blight,0.312,101.777
+1.43,-4.43,Unhealthy,Corn leaf blight,0.396,146.659
+3.33,1.5,Unhealthy,Corn leaf blight,0.801,157.386
+3.75,1.58,Unhealthy,Corn leaf blight,0.467,185.308
+0.12,0.22,Unhealthy,Corn leaf blight,0.31,196.934
+0.27,0.08,Healthy,Strawberry leaf,0.381,19.499
+3.24,1.44,Unhealthy,Corn leaf blight,0.36,23.748
+4.76,2.01,Unhealthy,Potato leaf late blight,0.709,47.55
+4.65,3.15,Unhealthy,Tomato leaf yellow virus,0.307,51.056
+4.65,3.15,Unhealthy,Corn leaf blight,0.323,54.813
+2.14,4.09,Healthy,Cherry leaf,0.567,58.126
+8.35,-1.51,Healthy,Cherry leaf,0.881,75.935
+7.4,-1.47,Healthy,Cherry leaf,0.475,79.384
+0.0,-0.0,Unhealthy,Potato leaf late blight,0.362,22.268
+3.16,1.41,Unhealthy,Corn leaf blight,0.512,29.207
+6.3,2.3,Unhealthy,Corn Gray leaf spot,0.63,42.251
+5.73,2.29,Healthy,Raspberry leaf,0.445,46.802
+5.73,2.29,Unhealthy,Potato leaf late blight,0.574,50.132
+5.31,1.22,Unhealthy,Tomato leaf bacterial spot,0.655,53.171

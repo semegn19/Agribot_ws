@@ -11,6 +11,7 @@ def generate_launch_description():
     pkg_description = get_package_share_directory('agribot_description')
     pkg_agribot_navigation = get_package_share_directory('agribot_navigation')
     pkg_nav2_bringup = get_package_share_directory('agribot_nav2_bringup')
+    map_path = os.path.join(pkg_nav2_bringup, 'maps', 'my_farm_map.yaml')
 
     # 1) spawn robot (gazebo + robot)
     spawn_robot = IncludeLaunchDescription(
@@ -37,7 +38,6 @@ def generate_launch_description():
         remappings=[
             ('/model/agribot/cmd_vel', '/cmd_vel'),
             ('/model/agribot/odometry', '/odom'),
-            
             ('/model/agribot/tf', '/tf'), 
             #('/model/agribot/tf_static', '/tf_static'),
         ],
@@ -77,10 +77,10 @@ def generate_launch_description():
             'params_file': nav2_params,
             'autostart': 'True',
             'use_lifecycle_mgr': 'True',
-            'slam': 'False',
+            'slam': 'False',  #	True
             'use_sim_time': 'True',
-            'map': LaunchConfiguration('map'),
-            # pass empty map (or put a real map path here)
+            'map': map_path #LaunchConfiguration('map'), 
+            # pass empty map or put a real map path here
             
         }.items()
     )

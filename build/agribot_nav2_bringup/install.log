@@ -6,7 +6,8 @@
 /home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/package.xml
 /home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/launch/bringup_launch.py
 /home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/params/nav2_params.yaml
-/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/maps
+/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/maps/my_farm_map.yaml
+/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/maps/my_farm_map.pgm
 /home/semegn/agribot_ws/install/agribot_nav2_bringup/lib/python3.10/site-packages/agribot_nav2_bringup-0.0.1-py3.10.egg-info/requires.txt
 /home/semegn/agribot_ws/install/agribot_nav2_bringup/lib/python3.10/site-packages/agribot_nav2_bringup-0.0.1-py3.10.egg-info/zip-safe
 /home/semegn/agribot_ws/install/agribot_nav2_bringup/lib/python3.10/site-packages/agribot_nav2_bringup-0.0.1-py3.10.egg-info/SOURCES.txt

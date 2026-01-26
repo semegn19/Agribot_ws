@@ -6,7 +6,6 @@ from cv_bridge import CvBridge
 import cv2
 import csv
 import os
-import math
 
 # TF2 Imports
 from tf2_ros import TransformException
@@ -16,120 +15,106 @@ from tf2_ros.transform_listener import TransformListener
 os.environ['YOLO_OFFLINE'] = 'True'
 from ultralytics import YOLO
 
-class AgriVisionTFLogger(Node):
+class AgriBotVision(Node):
     def __init__(self):
         super().__init__('agribot_vision_node')
         
-        # 1. YOLO Setup
-        model_path = '/home/semegn/agribot_ws/src/agribot_vision/agribot_vision/best.pt' 
-        self.model = YOLO(model_path)
+        # 1. Load your YOLO model
+        self.model = YOLO('/home/semegn/agribot_ws/src/agribot_vision/agribot_vision/best.pt')
         
-        # 2. TF Setup (Replacing Odometry)
+        # 2. Setup TF Listener
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
         
-        # 3. Config & Map
-        self.image_base_path = '/home/semegn/agribot_ws/src/agribot_gazebo/worlds/'
-        self.log_file = '/home/semegn/agribot_ws/farm_health_report.csv'
-        self.plant_map = {
-
-            (2.0, 6.0): 'textures/healthy_1.jpg', (3.0, 6.0): 'textures/diseased_1.jpg',
-
-            (4.0, 6.0): 'textures/healthy_2.jpg', (5.0, 6.0): 'textures/healthy_3.jpg',
-
-            (6.0, 6.0): 'textures/diseased_2.jpg', (7.0, 6.0): 'textures/healthy_4.jpg',
-
-            (2.0, 3.0): 'textures/healthy_5.jpg', (3.0, 3.0): 'textures/diseased_3.jpg',
-
-            (4.0, 3.0): 'textures/healthy_6.jpg', (5.0, 3.0): 'textures/healthy_7.jpg',
-
-            (6.0, 3.0): 'textures/diseased_4.jpg', (7.0, 3.0): 'textures/healthy_8.jpg',
-
-            (2.0, -3.0): 'textures/healthy_9.jpg', (3.0, -3.0): 'textures/diseased_5.jpg',
-
-            (4.0, -3.0): 'textures/healthy_10.jpg', (5.0, -3.0): 'textures/healthy_11.jpg',
-
-            (6.0, -3.0): 'textures/diseased_6.jpg', (7.0, -3.0): 'textures/healthy_12.jpg',
-
-            (2.0, -6.0): 'textures/healthy_13.jpg', (3.0, -6.0): 'textures/diseased_7.jpg',
-
-            (4.0, -6.0): 'textures/healthy_14.jpg', (5.0, -6.0): 'textures/healthy_15.jpg',
-
-            (6.0, -6.0): 'textures/diseased_8.jpg', (7.0, -6.0): 'textures/diseased_9.jpg'
-
-        }
-
+        # 3. Subscriber
         self.subscription = self.create_subscription(Image, '/camera', self.image_callback, 10)
         self.bridge = CvBridge()
-        self.robot_x, self.robot_y = 0.0, 0.0
+        
+        self.log_file = '/home/semegn/agribot_ws/farm_health_log.csv'
         self.last_log_time = 0.0
+        
+        # Updated CSV header to include Disease Name and Confidence
+        if not os.path.exists(self.log_file):
+            with open(self.log_file, 'w') as f:
+                csv.writer(f).writerow(['X', 'Y', 'Status', 'Disease_Name', 'Confidence', 'Timestamp'])
 
-        self.get_logger().info("TF-Based Vision Node Started. Tracking 'map' -> 'base_link'")
+        self.get_logger().info("Vision Node: Ready to classify and log farm health.")
 
-    def update_robot_pose(self):
-        """Gets current coordinates from the TF tree instead of Odom topic."""
+    def get_coords(self):
         try:
-            # Look up the transform (same as what you did in terminal)
             t = self.tf_buffer.lookup_transform('map', 'base_link', rclpy.time.Time())
-            self.robot_x = t.transform.translation.x
-            self.robot_y = t.transform.translation.y
-            return True
-        except TransformException as ex:
-            return False
+            return t.transform.translation.x, t.transform.translation.y
+        except TransformException:
+            return None, None
 
     def image_callback(self, msg):
-        # 1. Get latest position from TF
-        if not self.update_robot_pose():
-            return # Wait until TF is available
-
         frame = self.bridge.imgmsg_to_cv2(msg, 'bgr8')
-        active_injection = False
+        results = self.model.predict(source=frame, conf=0.3, imgsz=640, verbose=False)
         
-        # 2. Plant Injection Logic
-        for (px, py), img_path in self.plant_map.items():
-            dist = math.sqrt((self.robot_x - px)**2 + (self.robot_y - py)**2)
-            if dist < 1.2:
-                full_path = os.path.join(self.image_base_path, img_path)
-                real_img = cv2.imread(full_path)
-                if real_img is not None:
-                    frame = cv2.resize(real_img, (640, 480))
-                    active_injection = True
-                    break
+        x_map, y_map = self.get_coords()
 
-        # 3. YOLO Inference
-        if active_injection:
-            results = self.model.predict(source=frame, conf=0.4, verbose=False)
-            for r in results:
-                for box in r.boxes:
-                    label = self.model.names[int(box.cls[0])]
-                    conf = float(box.conf[0])
-                    color = (0, 0, 255) if "diseas" in label.lower() else (0, 255, 0)
-                    
-                    # Draw
-                    b = box.xyxy[0].cpu().numpy().astype(int)
-                    cv2.rectangle(frame, (b[0], b[1]), (b[2], b[3]), color, 2)
-                    cv2.putText(frame, f"{label} {conf:.2f}", (b[0], b[1]-10), 
-                                cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+        # Keywords that indicate a problem
+        unhealthy_keywords = [
+            "scab", "rust", "gray", "spot", "blight", "mildew", 
+            "virus", "mold", "rot", "bacterial"
+        ]
 
-                    if color == (0, 0, 255):
-                        self.save_to_log(label, conf)
+        for r in results:
+            for box in r.boxes:
+                # model.names usually gives the raw class string
+                raw_label = self.model.names[int(box.cls[0])]
+                label_lower = raw_label.lower()
+                conf = float(box.conf[0])
+                b = box.xyxy[0].cpu().numpy().astype(int)
 
-        cv2.imshow("AgriBot TF-Vision System", frame)
+                # --- FIXED LOGIC ---
+                # Check if any keyword exists in the label string
+                if any(k in label_lower for k in unhealthy_keywords):
+                    color = (0, 0, 255)  # Red for Unhealthy
+                    status = "Unhealthy"
+                else:
+                    color = (0, 255, 0)  # Green for Healthy
+                    status = "Healthy"
+
+                # 4. Draw to Screen (Showing disease name instead of just status)
+                display_text = f"{raw_label} ({conf:.2f})"
+                cv2.rectangle(frame, (b[0], b[1]), (b[2], b[3]), color, 3)
+                cv2.putText(frame, display_text, (b[0], b[1]-10), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+
+                # 5. Log to CSV
+                if x_map is not None:
+                    self.save_detection(x_map, y_map, status, raw_label, conf)
+
+        cv2.imshow("AgriBot Vision System", frame)
         cv2.waitKey(1)
 
-    def save_to_log(self, label, confidence):
+    def save_detection(self, x, y, status, disease_name, conf):
         now = self.get_clock().now().nanoseconds / 1e9
+        # Log every 3 seconds to avoid duplicating the same plant constantly
         if (now - self.last_log_time) > 3.0:
             self.last_log_time = now
-            self.get_logger().warn(f"DISEASE DETECTED at [{self.robot_x:.2f}, {self.robot_y:.2f}]")
+            self.get_logger().info(f"LOGGED: {disease_name} at ({x:.2f}, {y:.2f})")
             with open(self.log_file, 'a') as f:
-                csv.writer(f).writerow([round(self.robot_x, 2), round(self.robot_y, 2), label, round(confidence, 2), now])
+                csv.writer(f).writerow([
+                    round(x, 2), 
+                    round(y, 2), 
+                    status, 
+                    disease_name, 
+                    round(conf, 3), 
+                    now
+                ])
 
 def main():
     rclpy.init()
-    node = AgriVisionTFLogger()
-    rclpy.spin(node)
-    rclpy.shutdown()
+    node = AgriBotVision()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        cv2.destroyAllWindows()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()

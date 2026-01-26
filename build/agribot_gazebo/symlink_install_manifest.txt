@@ -1,6 +1,7 @@
 /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/launch/farm.launch.py
 /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/eth_farm.sdf
 /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/ethiopian_farm.sdf
+/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/ethiopian_farm.world
 /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/ethiopian_farm_generated.sdf
 /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/farm_health_report.csv
 /home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/worlds/generate_farm.py

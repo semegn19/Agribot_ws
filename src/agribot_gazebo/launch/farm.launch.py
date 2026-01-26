@@ -7,7 +7,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 def generate_launch_description():
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
     pkg_agribot_gazebo = get_package_share_directory('agribot_gazebo')
-    world_file = os.path.join(pkg_agribot_gazebo, 'worlds', 'ethiopian_farm.sdf')
+    world_file = os.path.join(pkg_agribot_gazebo, 'worlds', 'ethiopian_farm.world')
 
     return LaunchDescription([
         IncludeLaunchDescription(

@@ -18,6 +18,7 @@ setup(
         # params & maps
         (os.path.join('share', package_name, 'params'), glob('params/*')),
         (os.path.join('share', package_name, 'maps'), glob('maps/*')),
+        
     ],
     install_requires=['setuptools'],
     zip_safe=True,

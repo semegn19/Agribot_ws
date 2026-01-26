@@ -1,0 +1,379 @@
+[0.120s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.120s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x790ef883dc30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x790ef883cf10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x790ef883cf10>>, mixin_verb=('build',))
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.327s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/semegn/agribot_ws'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_description) by extension 'ros'
+[0.351s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agribot_description' with type 'ros.ament_cmake' and name 'agribot_description'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_gazebo) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agribot_gazebo' with type 'ros.ament_cmake' and name 'agribot_gazebo'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_nav2_bringup) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agribot_nav2_bringup' with type 'ros.ament_python' and name 'agribot_nav2_bringup'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_navigation) by extension 'ros'
+[0.355s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agribot_navigation' with type 'ros.ament_python' and name 'agribot_navigation'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extension 'colcon_pkg'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extensions ['colcon_meta']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extension 'colcon_meta'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extensions ['ros']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(src/agribot_vision) by extension 'ros'
+[0.356s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agribot_vision' with type 'ros.ament_python' and name 'agribot_vision'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'ros'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extensions ['cmake', 'python']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'cmake'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'python'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extensions ['python_setup_py']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials) by extension 'python_setup_py'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'ros'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extensions ['cmake', 'python']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'cmake'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'python'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extensions ['python_setup_py']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(src/materials/scripts) by extension 'python_setup_py'
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.378s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/semegn/agribot_ws/install
+[0.380s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 440 installed packages in /opt/ros/humble
+[0.382s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'cmake_args' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'cmake_target' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.435s] DEBUG:colcon.colcon_core.verb:Building package 'agribot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/semegn/agribot_ws/build/agribot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/semegn/agribot_ws/install/agribot_description', 'merge_install': False, 'path': '/home/semegn/agribot_ws/src/agribot_description', 'symlink_install': False, 'test_result_base': None}
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.436s] DEBUG:colcon.colcon_core.verb:Building package 'agribot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/semegn/agribot_ws/build/agribot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/semegn/agribot_ws/install/agribot_gazebo', 'merge_install': False, 'path': '/home/semegn/agribot_ws/src/agribot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'cmake_args' from command line to 'None'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'cmake_target' from command line to 'None'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_nav2_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.436s] DEBUG:colcon.colcon_core.verb:Building package 'agribot_nav2_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/semegn/agribot_ws/build/agribot_nav2_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/semegn/agribot_ws/install/agribot_nav2_bringup', 'merge_install': False, 'path': '/home/semegn/agribot_ws/src/agribot_nav2_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.436s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.437s] DEBUG:colcon.colcon_core.verb:Building package 'agribot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/semegn/agribot_ws/build/agribot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/semegn/agribot_ws/install/agribot_navigation', 'merge_install': False, 'path': '/home/semegn/agribot_ws/src/agribot_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'cmake_target' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.437s] Level 5:colcon.colcon_core.verb:set package 'agribot_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.437s] DEBUG:colcon.colcon_core.verb:Building package 'agribot_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/semegn/agribot_ws/build/agribot_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/semegn/agribot_ws/install/agribot_vision', 'merge_install': False, 'path': '/home/semegn/agribot_ws/src/agribot_vision', 'symlink_install': False, 'test_result_base': None}
+[0.437s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.438s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.438s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/semegn/agribot_ws/src/agribot_description' with build type 'ament_cmake'
+[0.438s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/semegn/agribot_ws/src/agribot_description'
+[0.440s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.440s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.440s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.444s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/semegn/agribot_ws/src/agribot_gazebo' with build type 'ament_cmake'
+[0.444s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/semegn/agribot_ws/src/agribot_gazebo'
+[0.444s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.444s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.448s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/semegn/agribot_ws/src/agribot_nav2_bringup' with build type 'ament_python'
+[0.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_nav2_bringup', 'ament_prefix_path')
+[0.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/hook/ament_prefix_path.ps1'
+[0.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/hook/ament_prefix_path.dsv'
+[0.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/hook/ament_prefix_path.sh'
+[0.450s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.453s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/semegn/agribot_ws/src/agribot_navigation' with build type 'ament_python'
+[0.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_navigation', 'ament_prefix_path')
+[0.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/hook/ament_prefix_path.ps1'
+[0.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/hook/ament_prefix_path.dsv'
+[0.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/hook/ament_prefix_path.sh'
+[0.455s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.455s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.458s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/semegn/agribot_ws/src/agribot_vision' with build type 'ament_python'
+[0.458s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_vision', 'ament_prefix_path')
+[0.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/hook/ament_prefix_path.ps1'
+[0.459s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/hook/ament_prefix_path.dsv'
+[0.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/hook/ament_prefix_path.sh'
+[0.460s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.460s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/semegn/agribot_ws/build/agribot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_description -- -j8 -l8
+[0.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/semegn/agribot_ws/build/agribot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_gazebo -- -j8 -l8
+[0.755s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/semegn/agribot_ws/src/agribot_nav2_bringup'
+[0.756s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.756s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.040s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/semegn/agribot_ws/src/agribot_navigation'
+[1.041s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.041s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.328s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/semegn/agribot_ws/src/agribot_vision'
+[1.328s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.328s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/semegn/agribot_ws/build/agribot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_gazebo -- -j8 -l8
+[1.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/semegn/agribot_ws/build/agribot_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_gazebo
+[1.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/semegn/agribot_ws/build/agribot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_description -- -j8 -l8
+[1.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/semegn/agribot_ws/build/agribot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_description
+[1.371s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agribot_description)
+[1.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/semegn/agribot_ws/build/agribot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_description
+[1.375s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description' for CMake module files
+[1.377s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description' for CMake config files
+[1.377s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_description', 'cmake_prefix_path')
+[1.378s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/hook/cmake_prefix_path.ps1'
+[1.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/hook/cmake_prefix_path.dsv'
+[1.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/hook/cmake_prefix_path.sh'
+[1.380s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/bin'
+[1.380s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/lib/pkgconfig/agribot_description.pc'
+[1.380s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/lib/python3.10/site-packages'
+[1.381s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/bin'
+[1.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.ps1'
+[1.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.dsv'
+[1.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.sh'
+[1.385s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.bash'
+[1.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.zsh'
+[1.387s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/semegn/agribot_ws/install/agribot_description/share/colcon-core/packages/agribot_description)
+[1.388s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agribot_description)
+[1.388s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description' for CMake module files
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description' for CMake config files
+[1.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_description', 'cmake_prefix_path')
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/hook/cmake_prefix_path.ps1'
+[1.390s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/hook/cmake_prefix_path.dsv'
+[1.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/hook/cmake_prefix_path.sh'
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/bin'
+[1.392s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/lib/pkgconfig/agribot_description.pc'
+[1.392s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/lib/python3.10/site-packages'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_description/bin'
+[1.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.ps1'
+[1.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.dsv'
+[1.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.sh'
+[1.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.bash'
+[1.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_description/share/agribot_description/package.zsh'
+[1.396s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/semegn/agribot_ws/install/agribot_description/share/colcon-core/packages/agribot_description)
+[1.397s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agribot_gazebo)
+[1.398s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo' for CMake module files
+[1.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/semegn/agribot_ws/build/agribot_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/semegn/agribot_ws/install/agribot_vision:/home/semegn/agribot_ws/install/agribot_navigation:/home/semegn/agribot_ws/install/agribot_nav2_bringup:/opt/ros/humble /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_gazebo
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo' for CMake config files
+[1.399s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_gazebo', 'cmake_prefix_path')
+[1.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/hook/cmake_prefix_path.ps1'
+[1.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/hook/cmake_prefix_path.dsv'
+[1.400s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/hook/cmake_prefix_path.sh'
+[1.401s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/bin'
+[1.401s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/lib/pkgconfig/agribot_gazebo.pc'
+[1.401s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/lib/python3.10/site-packages'
+[1.402s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/bin'
+[1.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.ps1'
+[1.402s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.dsv'
+[1.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.sh'
+[1.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.bash'
+[1.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.zsh'
+[1.404s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/semegn/agribot_ws/install/agribot_gazebo/share/colcon-core/packages/agribot_gazebo)
+[1.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agribot_gazebo)
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo' for CMake module files
+[1.405s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo' for CMake config files
+[1.406s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_gazebo', 'cmake_prefix_path')
+[1.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/hook/cmake_prefix_path.ps1'
+[1.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/hook/cmake_prefix_path.dsv'
+[1.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/hook/cmake_prefix_path.sh'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/bin'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/lib/pkgconfig/agribot_gazebo.pc'
+[1.407s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/lib/python3.10/site-packages'
+[1.408s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_gazebo/bin'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.ps1'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.dsv'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.sh'
+[1.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.bash'
+[1.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_gazebo/share/agribot_gazebo/package.zsh'
+[1.410s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/semegn/agribot_ws/install/agribot_gazebo/share/colcon-core/packages/agribot_gazebo)
+[1.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/semegn/agribot_ws/src/agribot_navigation': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_navigation build --build-base /home/semegn/agribot_ws/build/agribot_navigation/build install --record /home/semegn/agribot_ws/build/agribot_navigation/install.log --single-version-externally-managed install_data
+[1.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/semegn/agribot_ws/src/agribot_nav2_bringup': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_nav2_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_nav2_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_nav2_bringup build --build-base /home/semegn/agribot_ws/build/agribot_nav2_bringup/build install --record /home/semegn/agribot_ws/build/agribot_nav2_bringup/install.log --single-version-externally-managed install_data
+[1.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/semegn/agribot_ws/src/agribot_vision': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_vision build --build-base /home/semegn/agribot_ws/build/agribot_vision/build install --record /home/semegn/agribot_ws/build/agribot_vision/install.log --single-version-externally-managed install_data
+[2.162s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_navigation' for CMake module files
+[2.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/semegn/agribot_ws/src/agribot_navigation' returned '0': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_navigation build --build-base /home/semegn/agribot_ws/build/agribot_navigation/build install --record /home/semegn/agribot_ws/build/agribot_navigation/install.log --single-version-externally-managed install_data
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_navigation' for CMake config files
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_navigation/lib'
+[2.165s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_navigation/bin'
+[2.165s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_navigation/lib/pkgconfig/agribot_navigation.pc'
+[2.165s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_navigation/lib/python3.10/site-packages'
+[2.165s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_navigation', 'pythonpath')
+[2.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/hook/pythonpath.ps1'
+[2.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/hook/pythonpath.dsv'
+[2.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/hook/pythonpath.sh'
+[2.167s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_navigation/bin'
+[2.168s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agribot_navigation)
+[2.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/package.ps1'
+[2.169s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/package.dsv'
+[2.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/package.sh'
+[2.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/package.bash'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_navigation/share/agribot_navigation/package.zsh'
+[2.172s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/semegn/agribot_ws/install/agribot_navigation/share/colcon-core/packages/agribot_navigation)
+[2.184s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_nav2_bringup' for CMake module files
+[2.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/semegn/agribot_ws/src/agribot_nav2_bringup' returned '0': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_nav2_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_nav2_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_nav2_bringup build --build-base /home/semegn/agribot_ws/build/agribot_nav2_bringup/build install --record /home/semegn/agribot_ws/build/agribot_nav2_bringup/install.log --single-version-externally-managed install_data
+[2.185s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_nav2_bringup' for CMake config files
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_nav2_bringup/lib'
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_nav2_bringup/bin'
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_nav2_bringup/lib/pkgconfig/agribot_nav2_bringup.pc'
+[2.187s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_nav2_bringup/lib/python3.10/site-packages'
+[2.187s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_nav2_bringup', 'pythonpath')
+[2.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/hook/pythonpath.ps1'
+[2.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/hook/pythonpath.dsv'
+[2.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/hook/pythonpath.sh'
+[2.189s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_nav2_bringup/bin'
+[2.189s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agribot_nav2_bringup)
+[2.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/package.ps1'
+[2.190s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/package.dsv'
+[2.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/package.sh'
+[2.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/package.bash'
+[2.192s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/agribot_nav2_bringup/package.zsh'
+[2.192s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/semegn/agribot_ws/install/agribot_nav2_bringup/share/colcon-core/packages/agribot_nav2_bringup)
+[2.195s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_vision' for CMake module files
+[2.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/semegn/agribot_ws/src/agribot_vision' returned '0': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_vision build --build-base /home/semegn/agribot_ws/build/agribot_vision/build install --record /home/semegn/agribot_ws/build/agribot_vision/install.log --single-version-externally-managed install_data
+[2.196s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_vision' for CMake config files
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_vision/lib'
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_vision/bin'
+[2.197s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_vision/lib/pkgconfig/agribot_vision.pc'
+[2.198s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_vision/lib/python3.10/site-packages'
+[2.198s] Level 1:colcon.colcon_core.shell:create_environment_hook('agribot_vision', 'pythonpath')
+[2.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/hook/pythonpath.ps1'
+[2.198s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/hook/pythonpath.dsv'
+[2.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/hook/pythonpath.sh'
+[2.200s] Level 1:colcon.colcon_core.environment:checking '/home/semegn/agribot_ws/install/agribot_vision/bin'
+[2.200s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agribot_vision)
+[2.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/package.ps1'
+[2.201s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/package.dsv'
+[2.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/package.sh'
+[2.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/package.bash'
+[2.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/semegn/agribot_ws/install/agribot_vision/share/agribot_vision/package.zsh'
+[2.203s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/semegn/agribot_ws/install/agribot_vision/share/colcon-core/packages/agribot_vision)
+[2.203s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.203s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.203s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.203s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.209s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.210s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.210s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.222s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.222s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/semegn/agribot_ws/install/local_setup.ps1'
+[2.223s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/semegn/agribot_ws/install/_local_setup_util_ps1.py'
+[2.225s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/semegn/agribot_ws/install/setup.ps1'
+[2.226s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/semegn/agribot_ws/install/local_setup.sh'
+[2.227s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/semegn/agribot_ws/install/_local_setup_util_sh.py'
+[2.227s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/semegn/agribot_ws/install/setup.sh'
+[2.229s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/semegn/agribot_ws/install/local_setup.bash'
+[2.230s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/semegn/agribot_ws/install/setup.bash'
+[2.232s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/semegn/agribot_ws/install/local_setup.zsh'
+[2.233s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/semegn/agribot_ws/install/setup.zsh'

@@ -1,6 +1,3 @@
-# nav2_params.yaml
-
-
 amcl:
   ros__parameters:
     use_sim_time: true
@@ -26,7 +23,7 @@ amcl:
 map_server:
   ros__parameters:
     use_sim_time: true
-    yaml_filename: 'home/semegn/my_farm_map.yaml'
+    yaml_filename: '/maps/my_farm_map.yaml'
 
 planner_server:
   ros__parameters:
@@ -73,14 +70,16 @@ transformations:
 global_costmap:
   ros__parameters:
     use_sim_time: true
-    global_frame: map
+    global_frame: map   #odom
     robot_base_frame: base_footprint
     update_frequency: 5.0
     publish_frequency: 1.0
     always_send_full_costmap: true
-    track_unknown_space: false 
-    rolling_window: false
+    track_unknown_space: false   #true
+    rolling_window: false   #true
     robot_radius: 0.25
+    width: 20.0                    
+    height: 20.0
     plugins: ["obstacle_layer", "inflation_layer"]
     obstacle_layer:
       plugin: "nav2_costmap_2d::ObstacleLayer"
@@ -93,16 +92,16 @@ global_costmap:
         expected_update_rate: 20.0
     inflation_layer:
       plugin: "nav2_costmap_2d::InflationLayer"
-      inflation_radius: 0.25
+      inflation_radius: 0.15
 
 local_costmap:
   ros__parameters:
     use_sim_time: true
-    global_frame: odom
+    global_frame: map #odom
     robot_base_frame: base_footprint
     update_frequency: 5.0
     publish_frequency: 1.0
-    rolling_window: true
+    rolling_window: false    #true
     width: 6.0
     height: 6.0
     resolution: 0.05

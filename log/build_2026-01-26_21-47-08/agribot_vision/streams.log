@@ -1,0 +1,21 @@
+[1.439s] Invoking command in '/home/semegn/agribot_ws/src/agribot_vision': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_vision build --build-base /home/semegn/agribot_ws/build/agribot_vision/build install --record /home/semegn/agribot_ws/build/agribot_vision/install.log --single-version-externally-managed install_data
+[1.727s] running egg_info
+[1.728s] writing ../../build/agribot_vision/agribot_vision.egg-info/PKG-INFO
+[1.730s] writing dependency_links to ../../build/agribot_vision/agribot_vision.egg-info/dependency_links.txt
+[1.730s] writing entry points to ../../build/agribot_vision/agribot_vision.egg-info/entry_points.txt
+[1.730s] writing requirements to ../../build/agribot_vision/agribot_vision.egg-info/requires.txt
+[1.730s] writing top-level names to ../../build/agribot_vision/agribot_vision.egg-info/top_level.txt
+[1.733s] reading manifest file '../../build/agribot_vision/agribot_vision.egg-info/SOURCES.txt'
+[1.734s] writing manifest file '../../build/agribot_vision/agribot_vision.egg-info/SOURCES.txt'
+[1.734s] running build
+[1.734s] running build_py
+[1.735s] running install
+[1.735s] running install_lib
+[1.737s] running install_data
+[1.737s] running install_egg_info
+[1.739s] removing '/home/semegn/agribot_ws/install/agribot_vision/lib/python3.10/site-packages/agribot_vision-0.0.0-py3.10.egg-info' (and everything under it)
+[1.740s] Copying ../../build/agribot_vision/agribot_vision.egg-info to /home/semegn/agribot_ws/install/agribot_vision/lib/python3.10/site-packages/agribot_vision-0.0.0-py3.10.egg-info
+[1.741s] running install_scripts
+[1.761s] Installing detect_disease script to /home/semegn/agribot_ws/install/agribot_vision/lib/agribot_vision
+[1.762s] writing list of installed files to '/home/semegn/agribot_ws/build/agribot_vision/install.log'
+[1.803s] Invoked command in '/home/semegn/agribot_ws/src/agribot_vision' returned '0': PYTHONPATH=/home/semegn/agribot_ws/build/agribot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/semegn/agribot_ws/install/agribot_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agribot_vision build --build-base /home/semegn/agribot_ws/build/agribot_vision/build install --record /home/semegn/agribot_ws/build/agribot_vision/install.log --single-version-externally-managed install_data
