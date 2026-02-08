@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+.build/
+.install/
+.log/
+__pycache__/
+*.pyc
+.colcon/
+.vscode/
+
+.DS_Store
+Thumbs.db
+*.csv
