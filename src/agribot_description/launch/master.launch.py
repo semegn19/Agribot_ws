@@ -64,7 +64,6 @@ def generate_launch_description():
         output='screen',
         parameters=[{'use_sim_time': True}]
     )
-# then include odom_tf_bridge_node in the returned LaunchDescription list
 
 
     # 5) Nav2 bringup include (use the params from agribot_nav2_bringup)
@@ -93,6 +92,6 @@ def generate_launch_description():
         bridge,
         vision_node,
         delayed_nav2,
-        nav_node
+        nav_node,
     ])
 

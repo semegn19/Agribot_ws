@@ -1,4 +1,0 @@
-Invoking command in '/home/semegn/agribot_ws/build/agribot_description': /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_description -- -j8 -l8
-Invoked command in '/home/semegn/agribot_ws/build/agribot_description' returned '0': /usr/bin/cmake --build /home/semegn/agribot_ws/build/agribot_description -- -j8 -l8
-Invoking command in '/home/semegn/agribot_ws/build/agribot_description': /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_description
-Invoked command in '/home/semegn/agribot_ws/build/agribot_description' returned '0': /usr/bin/cmake --install /home/semegn/agribot_ws/build/agribot_description

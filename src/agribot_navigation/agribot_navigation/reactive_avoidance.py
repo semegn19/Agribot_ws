@@ -10,8 +10,8 @@ class ReactiveAvoid(Node):
         self.scan_sub = self.create_subscription(LaserScan, '/scan', self.scan_cb, 10)
         self.pub = self.create_publisher(Twist, '/cmd_vel', 10)
         self.get_logger().info('ReactiveAvoid started: will stop/turn on nearby obstacles.')
-        self.front_angle_width = 20  # degrees to each side of center
-        self.threshold = 0.6        # meters: closer than this => avoid
+        self.front_angle_width = 20  
+        self.threshold = 0.6        
 
     def scan_cb(self, msg: LaserScan):
         # compute indices for +/- front_angle_width
@@ -34,7 +34,7 @@ class ReactiveAvoid(Node):
 
         twist = Twist()
         if nearest < self.threshold:
-            # obstacle too close -> stop and turn away
+            # obstacle too close, stop and turn away
             self.get_logger().warn(f'Obstacle at {nearest:.2f} m -> evasive turn')
             twist.linear.x = 0.0
             twist.angular.z = 0.6  # turn speed

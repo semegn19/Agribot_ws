@@ -3,7 +3,7 @@ amcl:
     use_sim_time: true
     scan_topic: /scan
     odom_topic: /odom
-    base_frame_id: base_link
+    base_frame_id: base_footprint
     odom_frame_id: odom
     alpha1: 0.2
     alpha2: 0.2
@@ -92,7 +92,7 @@ global_costmap:
         expected_update_rate: 20.0
     inflation_layer:
       plugin: "nav2_costmap_2d::InflationLayer"
-      inflation_radius: 0.15
+      inflation_radius: 0.5
 
 local_costmap:
   ros__parameters:
@@ -101,7 +101,7 @@ local_costmap:
     robot_base_frame: base_footprint
     update_frequency: 5.0
     publish_frequency: 1.0
-    rolling_window: false    #true
+    rolling_window: true    #false
     width: 6.0
     height: 6.0
     resolution: 0.05

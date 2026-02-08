@@ -1,1 +1,0 @@
-/home/semegn/agribot_ws/src/agribot_description/launch/agribot_spawn.launch.py

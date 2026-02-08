@@ -19,7 +19,7 @@ class AgriBotVision(Node):
     def __init__(self):
         super().__init__('agribot_vision_node')
         
-        # 1. Load your YOLO model
+        # 1. Load YOLO model
         self.model = YOLO('/home/semegn/agribot_ws/src/agribot_vision/agribot_vision/best.pt')
         
         # 2. Setup TF Listener
@@ -32,8 +32,7 @@ class AgriBotVision(Node):
         
         self.log_file = '/home/semegn/agribot_ws/farm_health_log.csv'
         self.last_log_time = 0.0
-        
-        # Updated CSV header to include Disease Name and Confidence
+   
         if not os.path.exists(self.log_file):
             with open(self.log_file, 'w') as f:
                 csv.writer(f).writerow(['X', 'Y', 'Status', 'Disease_Name', 'Confidence', 'Timestamp'])
@@ -56,19 +55,16 @@ class AgriBotVision(Node):
         # Keywords that indicate a problem
         unhealthy_keywords = [
             "scab", "rust", "gray", "spot", "blight", "mildew", 
-            "virus", "mold", "rot", "bacterial"
+            "virus", "mold", "rot", "bacterial", "mites"
         ]
 
         for r in results:
             for box in r.boxes:
-                # model.names usually gives the raw class string
                 raw_label = self.model.names[int(box.cls[0])]
                 label_lower = raw_label.lower()
                 conf = float(box.conf[0])
                 b = box.xyxy[0].cpu().numpy().astype(int)
 
-                # --- FIXED LOGIC ---
-                # Check if any keyword exists in the label string
                 if any(k in label_lower for k in unhealthy_keywords):
                     color = (0, 0, 255)  # Red for Unhealthy
                     status = "Unhealthy"
@@ -76,7 +72,6 @@ class AgriBotVision(Node):
                     color = (0, 255, 0)  # Green for Healthy
                     status = "Healthy"
 
-                # 4. Draw to Screen (Showing disease name instead of just status)
                 display_text = f"{raw_label} ({conf:.2f})"
                 cv2.rectangle(frame, (b[0], b[1]), (b[2], b[3]), color, 3)
                 cv2.putText(frame, display_text, (b[0], b[1]-10), 

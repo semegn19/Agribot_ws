@@ -33,8 +33,7 @@ def launch_setup(context, *args, **kwargs):
 def generate_launch_description():
     pkg_this = get_package_share_directory('agribot_nav2_bringup')
     default_params = os.path.join(pkg_this, 'params', 'nav2_params.yaml')
-    default_map = ''  # leave empty by default; set to maps/map.yaml if you add a map
-
+    default_map = ''  
     declare_params = DeclareLaunchArgument(
         'params_file',
         default_value=default_params,

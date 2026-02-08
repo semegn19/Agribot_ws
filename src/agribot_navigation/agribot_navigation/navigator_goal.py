@@ -14,10 +14,8 @@ def main():
     goal_pose = PoseStamped()
     goal_pose.header.frame_id = 'map'
     goal_pose.header.stamp = nav.get_clock().now().to_msg()
-    
-    # Change these to your actual farm map coordinates!
-    goal_pose.pose.position.x = 2.0  
-    goal_pose.pose.position.y = 1.0
+    goal_pose.pose.position.x = 7.0  
+    goal_pose.pose.position.y = 0.0
     goal_pose.pose.orientation.w = 1.0
 
     # 2. Start Navigation

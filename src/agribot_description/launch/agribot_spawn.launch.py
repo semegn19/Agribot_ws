@@ -18,14 +18,13 @@ def generate_launch_description():
     params = {'robot_description': robot_description_config.toxml()}
 
     # 3. Nodes
-    # 3. Nodes
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
         parameters=[{
             'robot_description': robot_description_config.toxml(),
-            'use_sim_time': True,  # <--- THIS IS CRITICAL
+            'use_sim_time': True, 
             'publish_frequency': 30.0,
         }]
     )

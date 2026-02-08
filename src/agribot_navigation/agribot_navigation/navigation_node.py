@@ -12,19 +12,21 @@ class NavigationNode(Node):
         self._action_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
         self._goal_handle = None
 
-        # Waypoints (map frame). Replace coordinates to match your farm rows.
-        self.declare_parameter('waypoints', [
-            {'x': 1.0, 'y': 1.0, 'w': 1.0},
-            {'x': 3.0, 'y': 6.0, 'w': 1.0},
-            {'x': 6.0, 'y': 3.0, 'w': 1.0}
-        ])
-        wp_param = self.get_parameter('waypoints').get_parameter_value().string_array_value
-        # We won't parse string_array here — keep the hardcoded list above for simplicity.
-        self.waypoints = [(1.0,1.0,1.0), (3.0,6.0,1.0), (6.0,3.0,1.0)]
+        # Hardcoded waypoints: (x, y, w)
+        self.waypoints = [
+            (3.99, -4.48, 1.0), 
+            (1.28, 6.36, 1.0), 
+            (3.47, 5.92, 1.0),
+            (6.04, -5.4, 1.0),
+            (7.94, -4.95, 1.0),
+            (5.14, 7.46, 1.0),
+            (7.9, 6.81, 1.0),
+            (9.86, -4.83, 1.0),
+            
+        ]
 
         self.current_wp = 0
 
-        # Expose a simple cancel service so other nodes can request goal cancellation
         self.create_service(Trigger, 'cancel_nav_goal', self.cancel_service_cb)
 
         self.get_logger().info('Navigation node started, waiting for action server...')
@@ -62,22 +64,21 @@ class NavigationNode(Node):
         self.get_logger().info('Goal accepted.')
 
     def feedback_cb(self, feedback_msg):
-        # optional: examine feedback_msg.feedback
         pass
 
     def get_result_cb(self, future):
-        result = future.result().result
         status = future.result().status
-        if status == 4:  # canceled
-            self.get_logger().info('Goal was canceled.')
-        elif status == 5:  # aborted
-            self.get_logger().warn('Goal aborted.')
+        
+        if status == 4:  # Canceled
+            self.get_logger().warn(f'Goal #{self.current_wp} was CANCELED. Moving to next anyway...')
+        elif status == 5:  # Aborted (Robot stuck)
+            self.get_logger().error(f'Goal #{self.current_wp} ABORTED (stuck). Skipping to next...')
         else:
-            self.get_logger().info('Goal succeeded (or finished).')
-        # Move to next waypoint if there are more
-        if status not in (4,):  # even if canceled, you might decide to not continue
-            self.current_wp += 1
-            self.send_next_goal()
+            self.get_logger().info(f'Goal #{self.current_wp} SUCCEEDED.')
+
+        # Always move to the next waypoint regardless of why the last one ended
+        self.current_wp += 1
+        self.send_next_goal()
         self._goal_handle = None
 
     def cancel_service_cb(self, request, response):
