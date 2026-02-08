@@ -1,2 +1,1 @@
-* text=auto eol=lf
-*.ipynb linguist-detectable=false
+* text=auto eol=lf .ipynb linguist-detectable=false
