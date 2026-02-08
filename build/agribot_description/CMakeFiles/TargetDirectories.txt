@@ -1,9 +1,0 @@
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/uninstall.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/agribot_description_uninstall.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/test.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/edit_cache.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/rebuild_cache.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/list_install_components.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/install.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/install/local.dir
-/home/semegn/agribot_ws/build/agribot_description/CMakeFiles/install/strip.dir

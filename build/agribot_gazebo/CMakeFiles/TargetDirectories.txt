@@ -1,9 +1,0 @@
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/uninstall.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/agribot_gazebo_uninstall.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/test.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/edit_cache.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/rebuild_cache.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/list_install_components.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/install.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/install/local.dir
-/home/semegn/agribot_ws/build/agribot_gazebo/CMakeFiles/install/strip.dir
