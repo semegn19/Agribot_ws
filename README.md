@@ -84,7 +84,7 @@ ros2 launch agribot_description master.launch.py \
 use_sim_time:=True \
 map:=/home/<username>/agribot_ws/src/agribot_nav2_bringup/maps/my_farm_map.yaml
 ```
-> <username> → your system username
+- <username> → your system username
 
 ---
 
